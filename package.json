@@ -29,7 +29,7 @@
 	},
 	"devDependencies": {
 		"@as-pect/cli": "4.0.0",
-		"@types/node": "^14.0.13",
+		"@types/node": "^14.14.22",
 		"assemblyscript": "0.13.0",
 		"live-server": "^1.2.1",
 		"make-dir-cli": "^2.0.0",
@@ -39,6 +39,6 @@
 	},
 	"dependencies": {
 		"@assemblyscript/loader": "^0.10.0",
-		"aswebglue": "0.0.1"
+		"aswebglue": "^0.1.1"
 	}
 }

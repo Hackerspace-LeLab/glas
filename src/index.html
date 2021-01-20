@@ -4,6 +4,9 @@
 		<title>GLAS - WebGL in AssemblyScript</title>
 	</head>
 	<body>
-		<script src="./ts/index.js" type="module"></script>
+		<script type="module">
+			import {GLAS} from './ts/index.js'
+			GLAS.load("untouched")
+		</script>
 	</body>
 </html>

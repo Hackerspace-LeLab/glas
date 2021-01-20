@@ -1,23 +1,22 @@
 // import {loadWasmModule} from './loadWasmModule'
 // import 'assemblyscript/std/portable'
 
-import {print} from 'aswebglue'
-print("hello aswebglue");
+import {print} from './ASWebGLue.js'
 
-main()
-
-function main() {
-	runGlas({mode: 'untouched'})
-	// runGlas({mode: 'optimized'})
+export namespace GLAS {
+	export function load(): void {
+		run({mode: 'untouched'})
+	}
 }
 
 // type GlasModule = {
 // 	main(): void
 // }
 
-async function runGlas(options: RunOptions = {}) {
+async function run(options: RunOptions = {}) {
 
-	console.log(`runGlas -> ('${options.mode || 'optimized'}')`)
+	console.log(`run -> ('${options.mode || 'optimized'}')`)
+	print("print::'hello from aswebglue'");
 
 	// const module = `../as/${options.mode || 'optimized'}.wasm`
 
